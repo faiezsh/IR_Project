@@ -50,16 +50,6 @@ def without_prepositions(last):
     sentence_without_prepositions = " ".join(last)
     return (sentence_without_prepositions) 
 
-def inverted_index (docs):
-    inverted_index = defaultdict(list)
-    for doc_id, doc in enumerate(docs):
-        tokens = nltk.word_tokenize(doc)
-    for token in tokens:
-        inverted_index[token].append(doc_id)
-    return inverted_index
-
-def index_hash(word,data):
-    index = {}
 
 def optmaize(word):
     words=split(word)
